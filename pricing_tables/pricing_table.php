@@ -1,13 +1,11 @@
 <?php
 /*
-	Plugin Name: Pricing table for assignment 3
+	Plugin Name: Pricing table by Siddhesh
 	Plugin URI: 
-	Description: Create a Beautiful, Responsive and Highly Converting Pricing or Comparison Table in Less Than 5 Minutes with Easy Pricing Tables for WordPress. No Coding Required.
-	Text Domain: easy-pricing-tables
-	Domain Path: /languages
-	Author: Fatcat Apps
-	Version: 2.4.5
-	Author URI: https://fatcatapps.com
+	Description: Quickly create beautiful looking pricing table for your website.
+	Text Domain: Pricing tables
+	Author: Siddhesh Lendhe
+	Version: 1.0.0
 */
 
 if( ! defined( 'PTP_PLUGIN_PATH' ) ) {
@@ -65,7 +63,7 @@ if( ! defined( 'PTP_PLUGIN_PATH' ) ) {
   function dh_ptp_plugin_footer ($text) {
     echo
   	$text . ' '.
-  	sprintf( __('Thank you for using Pricing Tables.') ). ' ' .
+  	sprintf( __('Thank you for using Pricing Tables.') ),
   	sprintf( __('Copyright reserved by Siddhesh Lendhe')); 
   }
 
@@ -94,7 +92,7 @@ function fca_ptp_uninstall_ajax() {
 
 	if ( $nonceVerified && !empty( $msg ) ) {
 		
-		$url =  "https://api.fatcatapps.com/api/feedback.php";
+		$url =  "";
 				
 		$body = array(
 			'product' => 'pricingtables',
