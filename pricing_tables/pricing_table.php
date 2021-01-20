@@ -29,9 +29,6 @@ if( ! defined( 'PTP_PLUGIN_PATH' ) ) {
 
   // Include pointer popups
   include ( PTP_PLUGIN_PATH . 'includes/pointer.php');
-
-  // Upgrade to Premium
-  include ( PTP_PLUGIN_PATH . 'includes/upgrade.php');
   
   // Include Gutenberg support
   include ( PTP_PLUGIN_PATH . 'includes/block.php');
@@ -63,8 +60,8 @@ if( ! defined( 'PTP_PLUGIN_PATH' ) ) {
   function dh_ptp_plugin_footer ($text) {
     echo
   	$text . ' '.
-  	sprintf( __('Thank you for using Pricing Tables.') ),
-  	sprintf( __('Copyright reserved by Siddhesh Lendhe')); 
+  	sprintf( __(' Thank you for using Pricing Tables by Siddhesh.') ),
+  	sprintf( __(' Copyright reserved by Siddhesh Lendhe')); 
   }
 
   function dh_ptp_plugin_footer_enqueue($hook_suffix) {
